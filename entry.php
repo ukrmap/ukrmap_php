@@ -8,7 +8,6 @@ $id = $_GET['id'];
 if (!$conn->connect_errno) {
   $entry = $conn->query("SELECT `id`, `category`, `course`, `parent_id`, `level`, `dir2`, `tutorial`, `$title`, `text_file`, `maps`, `$maps_names_locale`, `pictures`, `xmlfile`, `video_file`, `text_with_title`, `sequence` FROM `entries` WHERE `id` = $id")->fetch_assoc();
   $parent = $conn->query("SELECT `$title` FROM `entries` WHERE `id` = $entry[parent_id]")->fetch_assoc();
-  echo $entry['title_en'];
 } else {
   foreach ($all_entries as $row) {
     if ($row['id'] == $id) { $entry = $row; }

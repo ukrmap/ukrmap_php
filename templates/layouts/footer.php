@@ -6,5 +6,7 @@
     <script src="/js/photoswipe.min.js"></script>
     <script src="/js/photoswipe-ui-default.min.js"></script>
     <script src="/js/gallery.js"></script>
+    <script src="/js/jquery.autocomplete.min.js"></script>
+    <script src="/js/search_autocomplete.js"></script>
   </body>
 </html>

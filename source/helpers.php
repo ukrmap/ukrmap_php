@@ -95,4 +95,8 @@ function convert_xml_entry_to_array($object){
 function cmp_sequence($a, $b) {
   return $a['sequence'] - $b['sequence'];
 }
+
+function escapehtmlchars($string) {
+  return str_replace(array('&', "'", '"', '<', '>'), array('&amp;', '&apos;', '&quot;', '&lt;', '&gt;'), $string);
+}
 ?>

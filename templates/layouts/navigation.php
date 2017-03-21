@@ -8,9 +8,9 @@
     <span class="navbar-brand hidden-xs"><a href="/">UKRMAP</a></span>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
-        <?php require('navigation_links.php') ?>
+        <?php require('navigation_links.php'); ?>
       </ul>
-      <?php if (isset($entry)) { require('languages_links.php'); } ?>
+      <?php require('languages_links.php'); ?>
     </div>
   </div>
 </div>

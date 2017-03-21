@@ -69,7 +69,7 @@ foreach ($pictures as $pictures_dir) {
     $name = $item['Caption'];
     echo '<div class="picture_preview">';
     echo '<a href="/'.$picture.'" class="picture_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.$name.'" data-index="'.$index.'">';
-    echo '<img src="/'.$thumbnail.'"/>';
+    echo '<img src="/'.$thumbnail.'" width="200"/>';
     echo '</a>';
     echo '<br/>';
     echo "<span><i>$name</i></span>";
