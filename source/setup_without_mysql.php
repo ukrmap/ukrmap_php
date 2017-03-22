@@ -8,8 +8,8 @@ $g_courses = array();
 $wh_courses = array();
 $uh_courses = array();
 $all_entries = array();
-foreach ($data as $entry) {
-  $row = convert_xml_entry_to_array($entry);
+foreach ($data as $e) {
+  $row = convert_xml_entry_to_array($e);
   $all_entries[] = $row;
   if (!isset($row['category'])) { continue; }
   if ($row['category'] == 'g' && $row['level'] == 2) { $g_courses[] = $row; }

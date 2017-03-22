@@ -107,4 +107,16 @@ function article_path($article) {
     return '/article/'.$article['id'].'.html';
   }
 }
+
+function index_path($locale) {
+  if (isset($_GET['q'])) {
+    return '/'.$locale.'/?q='.urlencode($_GET['q']);
+  } else {
+    if ($locale == 'uk') {
+      return '/';
+    } else {
+      return '/'.$locale;
+    }
+  }
+}
 ?>
