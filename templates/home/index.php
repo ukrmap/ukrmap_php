@@ -26,11 +26,11 @@
         if (!$conn->connect_errno) {
           mysqli_data_seek($g_courses, 0);
           while ($row = $g_courses->fetch_assoc()) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         } else {
           foreach ($g_courses as $row) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         }
       ?>
@@ -44,11 +44,11 @@
         if (!$conn->connect_errno) {
           mysqli_data_seek($wh_courses, 0);
           while ($row = $wh_courses->fetch_assoc()) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         } else {
           foreach ($wh_courses as $row) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         }
       ?>
@@ -62,11 +62,11 @@
         if (!$conn->connect_errno) {
           mysqli_data_seek($uh_courses, 0);
           while ($row = $uh_courses->fetch_assoc()) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         } else {
           foreach ($uh_courses as $row) {
-            echo '<li><a href="/uk-'.$row['course'].'">'.$row[$title].'</a></li>';
+            echo '<li><a href="/'.$locale.'-'.$row['course'].'">'.$row[$title].'</a></li>';
           }
         }
       ?>
