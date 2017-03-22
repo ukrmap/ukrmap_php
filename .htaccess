@@ -10,3 +10,8 @@ RewriteRule ^(uk|ru|en|be)-(g|wh|uh)/?$ /category.php?locale=$1&category=$2 [L]
 RewriteRule ^(uk|ru|en|be)-(g4|gk|g6|g7|g8|g9|g10|g11|gc|gr|uh5|uh7|uh8|uh9|uh10|uh11|wh6|wh7|wh8|wh9|wh10|wh11)/?$ /course.php?locale=$1&course=$2 [L]
 RewriteRule ^(uk|ru|en|be)-(g4|gk|g6|g7|g8|g9|g10|g11|gc|gr|uh5|uh7|uh8|uh9|uh10|uh11|wh6|wh7|wh8|wh9|wh10|wh11)/(\d+)\.html$ /entry.php?locale=$1&course=$2&id=$3 [L]
 RewriteRule ^(uk|ru|en|be)/?$ /index.php?locale=$1 [QSA]
+
+RewriteRule ^article/(\d+)\.html$ /article.php?id=$1 [L]
+RewriteRule ^article/(\d+)-[\w-]+\.html$ /article.php?id=$1 [L]
+RewriteRule ^articles\.html$ /articles.php [L]
+RewriteRule ^articles$ /articles.php [L]

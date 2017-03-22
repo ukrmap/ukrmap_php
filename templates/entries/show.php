@@ -13,8 +13,8 @@ require('templates/entries/pager.php');
   <div class="col-md-4 sidebar">
 <?php
 $files_dir = files_dir($entry);
-$maps = split(';', $entry['maps']);
-$maps_names = split(';', $entry[$maps_names_locale]);
+$maps = explode(';', $entry['maps']);
+$maps_names = explode(';', $entry[$maps_names_locale]);
 
 foreach ($maps as $index => $map) {
   $map_file = "images/$files_dir/Maps/$map.jpg";
@@ -22,7 +22,7 @@ foreach ($maps as $index => $map) {
   $name = $maps_names[$index];
   $size = getimagesize($map_file);
   echo '<div class="map_preview">';
-  echo '<a href="/'.$map_file.'" class="map_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.$name.'" data-index="'.$index.'">';
+  echo '<a href="/'.$map_file.'" class="map_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.escapehtmlchars($name).'" data-index="'.$index.'">';
   $thumbnail = '/images/'.$files_dir.'/Maps/'.$map.'_resize.jpg';
   echo '<img src="'.$thumbnail.'" width="200"/>';
   echo '</a>';
@@ -43,7 +43,7 @@ foreach ($maps as $index => $map) {
 </script>
 </div>
 <?php
-$pictures = split(';', $entry['pictures']);
+$pictures = explode(';', $entry['pictures']);
 $index = 0;
 foreach ($pictures as $pictures_dir) {
   $t = 'content/pictures/'.$files_dir.'/'.$pictures_dir.'_'.$locale.'.xml';
@@ -68,7 +68,7 @@ foreach ($pictures as $pictures_dir) {
     $size = getimagesize($picture);
     $name = $item['Caption'];
     echo '<div class="picture_preview">';
-    echo '<a href="/'.$picture.'" class="picture_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.$name.'" data-index="'.$index.'">';
+    echo '<a href="/'.$picture.'" class="picture_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.escapehtmlchars($name).'" data-index="'.$index.'">';
     echo '<img src="/'.$thumbnail.'" width="200"/>';
     echo '</a>';
     echo '<br/>';

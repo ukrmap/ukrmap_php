@@ -99,4 +99,12 @@ function cmp_sequence($a, $b) {
 function escapehtmlchars($string) {
   return str_replace(array('&', "'", '"', '<', '>'), array('&amp;', '&apos;', '&quot;', '&lt;', '&gt;'), $string);
 }
+
+function article_path($article) {
+  if ($article['slug']) {
+    return '/article/'.$article['id'].'-'.$article['slug'].'.html';
+  } else {
+    return '/article/'.$article['id'].'.html';
+  }
+}
 ?>

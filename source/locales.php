@@ -18,6 +18,8 @@ switch ($locale) {
     define('SEARCH', 'Пошук');
     define('SEARCH_RESULTS', 'Результати пошуку');
     define('NO_RESULTS', 'На жаль, за Вашим запитом нічого не знайдено.');
+    define('ARTICLES', 'Статті');
+    define('ADVERTISING_SUFFIX', ' <i style="color:grey;">(реклама)</i>');
     break;
   case 'ru':
     define('TITLE', 'Украинские учебники и карты. Всемирная история, история Украины, география.');
@@ -30,6 +32,8 @@ switch ($locale) {
     define('SEARCH', 'Поиск');
     define('SEARCH_RESULTS', 'Результаты поиска');
     define('NO_RESULTS', 'К сожалению, по Вашему запросу ничего не найдено.');
+    define('ARTICLES', 'Статьи');
+    define('ADVERTISING_SUFFIX', ' <i style="color:grey;">(реклама)</i>');
     break;
   case 'en':
     define('TITLE', 'Ukrainian textbooks and maps. World History, History of Ukraine, Geography.');
@@ -42,6 +46,8 @@ switch ($locale) {
     define('SEARCH', 'Search');
     define('SEARCH_RESULTS', 'Search Results');
     define('NO_RESULTS', 'Sorry, no results have been found.');
+    define('ARTICLES', 'Articles');
+    define('ADVERTISING_SUFFIX', ' <i style="color:grey;">(advertising)</i>');
     break;
   case 'be':
     define('TITLE', 'Ўкраінскі падручнікаў і карты. Сусветная гісторыя, гісторыя Украіны, геаграфія.');
@@ -54,6 +60,8 @@ switch ($locale) {
     define('SEARCH', 'Пошук');
     define('SEARCH_RESULTS', 'Вынікі пошуку');
     define('NO_RESULTS', 'На жаль, па Вашым запыце нічога не знойдзена.');
+    define('ARTICLES', 'Артыкулы');
+    define('ADVERTISING_SUFFIX', ' <i style="color:grey;">(рэклама)</i>');
     break;
 }
 $title = 'title_'.$locale;

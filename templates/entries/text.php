@@ -2,6 +2,7 @@
 if (!isset($entry['text_with_title']) || !$entry['text_with_title']) {
   echo '<h1>'.$entry[$title].' <i style="color:grey;">('.t($entry['tutorial']).')</i></h1>';
 }
+if ($entry['id'] != 686 && $entry['id'] != 694) {
 ?>
 <div style="float:left;margin:25px 25px 25px 0px;">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -15,6 +16,7 @@ if (!isset($entry['text_with_title']) || !$entry['text_with_title']) {
 </script>
 </div>
 <?php
+}
 show_entry_content($entry);
 require('templates/entries/pager.php');
 ?>
