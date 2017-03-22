@@ -4,7 +4,7 @@
   </div>
   <div class="col-md-8">
     <h1>404 помилка</h1>
-    <h4>Сторінка <?php echo 'http://ukrmap.su'.$_SERVER['REQUEST_URI']; ?> не знайдена.</h4>
+    <h4>Сторінка <?php echo 'http://ukrmap.su'.$uri; ?> не знайдена.</h4>
     <br/>
     <p style="font-size: 16px;">На жаль, запитувана Вами сторінка на сайті не існує.</p>
     <p style="font-size: 16px;">Перепрошуємо за незручності і пропонуємо наступні шляхи:</p>

@@ -15,3 +15,5 @@ RewriteRule ^article/(\d+)\.html$ /article.php?id=$1 [L]
 RewriteRule ^article/(\d+)-[\w-]+\.html$ /article.php?id=$1 [L]
 RewriteRule ^articles\.html$ /articles.php [L]
 RewriteRule ^articles$ /articles.php [L]
+
+RewriteRule ^404.html$ /404.php [QSA]

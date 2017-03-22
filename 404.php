@@ -16,10 +16,14 @@ if (preg_match('/^\/program2010\/(\w+)\/(.+)/', $_SERVER['REQUEST_URI'], $matche
   }
 }
 
+header('HTTP/1.0 404 Not Found');
+
+$uri = isset($_GET['uri']) ? $_GET['uri'] : $_SERVER['REQUEST_URI'];
+
 require('source/setup_without_mysql.php');
 require('templates/layouts/header.php');
 require('templates/layouts/navigation.php');
 require('templates/layouts/container.php');
-require('templates/layouts/404.php');
+require('templates/layouts/404_'.$locale.'.php');
 require('templates/layouts/footer.php');
 ?>
