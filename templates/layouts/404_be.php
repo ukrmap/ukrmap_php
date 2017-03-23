@@ -1,6 +1,6 @@
 <div class="row">
-  <div class="col-md-4">
-    <img src="/css/images/treasure_island_map.jpg" width="300" height="403" hspace="50" />
+  <div class="col-md-4" align="center">
+    <img src="/css/images/treasure_island_map.jpg" width="300" height="403"/>
   </div>
   <div class="col-md-8">
     <h1>Памылка 404</h1>
@@ -12,6 +12,7 @@
       <li class="list-group-item" style="font-size: 16px;">вярнуцца назад з дапамогай кнопкі браўзэра "backspace";</li>
       <li class="list-group-item" style="font-size: 16px;">праверыць правільнасць напісання URL адрасы старонкі;</li>
       <li class="list-group-item" style="font-size: 16px;">скарыстацца меню сайта для пошуку неабходнай старонкі;</li>
+      <li class="list-group-item" style="font-size: 16px;">скарыстацца пошукам на сайце ukrmap.su;</li>
       <li class="list-group-item" style="font-size: 16px;">скарыстацца звыклай для Вас пошукавай сістэмай.</li>
     </ul>
   </div>
