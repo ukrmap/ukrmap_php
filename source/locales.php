@@ -9,6 +9,7 @@ $GLOBALS['locale'] = $locale;
 switch ($locale) {
   case 'uk':
     define('TITLE', 'Українські підручники та карти. Всесвітня історія, історія України, географія.');
+    define('META_DESCRIPTION', 'Навчальні матеріали, конспекти і підручники, карти та питання з географії, всесвітньої історії та історії України.');
     define('SYNOPSIS', 'конспект');
     define('TEXTBOOK', 'підручник');
     define('GEOGRAPHY', 'Географія');
@@ -23,6 +24,7 @@ switch ($locale) {
     break;
   case 'ru':
     define('TITLE', 'Украинские учебники и карты. Всемирная история, история Украины, география.');
+    define('META_DESCRIPTION', 'Учебные материалы, конспекты и учебники, карты и вопросы по географии, всемирной истории и истории Украины.');
     define('SYNOPSIS', 'конспект');
     define('TEXTBOOK', 'учебник');
     define('GEOGRAPHY', 'География');
@@ -37,6 +39,7 @@ switch ($locale) {
     break;
   case 'en':
     define('TITLE', 'Ukrainian textbooks and maps. World History, History of Ukraine, Geography.');
+    define('META_DESCRIPTION', 'Educational materials, compendiums and textbooks, maps, and questions on geography, world history and the history of Ukraine.');
     define('SYNOPSIS', 'compendium');
     define('TEXTBOOK', 'textbook');
     define('GEOGRAPHY', 'Geography');
@@ -51,6 +54,7 @@ switch ($locale) {
     break;
   case 'be':
     define('TITLE', 'Ўкраінскі падручнікаў і карты. Сусветная гісторыя, гісторыя Украіны, геаграфія.');
+    define('META_DESCRIPTION', 'Навучальныя матэрыялы, канспекты і падручнікі, карты і пытанні па геаграфіі, сусветнай гісторыі і гісторыі Украіны.');
     define('SYNOPSIS', 'канспект');
     define('TEXTBOOK', 'падручнік');
     define('GEOGRAPHY', 'Геаграфія');

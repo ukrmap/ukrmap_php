@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Cache-control" content="public">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php echo isset($page_title) ? $page_title : TITLE; ?></title>
-  <link rel="stylesheet" media="all" href="/css/bootstrap-3.3.7.min.css" />
-  <link rel="stylesheet" media="all" href="/css/ukrmap-1.min.css" />
-  <link rel="stylesheet" media="all" href="/css/photoswipe.css" />
-  <link rel="stylesheet" media="all" href="/css/pswp/default-skin.css" />
+<?php if ($_SERVER['SCRIPT_NAME'] == '/index.php') { ?>
+  <meta name="description" content="<?php echo META_DESCRIPTION; ?>">
+<?php } ?>
+  <link rel="stylesheet" media="all" href="/css/bootstrap-3.3.7.min.css">
+  <link rel="stylesheet" media="all" href="/css/ukrmap-1.min.css">
+  <link rel="stylesheet" media="all" href="/css/photoswipe.css">
+  <link rel="stylesheet" media="all" href="/css/pswp/default-skin.css">
   <link rel="apple-touch-icon" sizes="57x57" href="/css/favicon/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/css/favicon/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/css/favicon/apple-icon-72x72.png">

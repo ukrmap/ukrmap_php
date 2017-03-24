@@ -1,5 +1,6 @@
 <?php
 header('Content-type: text/html; charset=UTF-8');
+header('Cache-Control: max-age=2592000');
 require('source/locales.php');
 require('source/helpers.php');
 
