@@ -46,6 +46,11 @@ def generate_sitemap_xml
         xml.url{xml.loc "https://geomap.com.ua/en-#{entry.course}/#{entry.id}.html"}
         xml.url{xml.loc "https://geomap.com.ua/be-#{entry.course}/#{entry.id}.html"}
       end
+      xml.url{xml.loc "https://geomap.com.ua/privacy_policy.html"}
+      xml.url{xml.loc "https://geomap.com.ua/uk/privacy_policy.html"}
+      xml.url{xml.loc "https://geomap.com.ua/ru/privacy_policy.html"}
+      xml.url{xml.loc "https://geomap.com.ua/en/privacy_policy.html"}
+      xml.url{xml.loc "https://geomap.com.ua/be/privacy_policy.html"}
     end
   end
   File.open(File.join('./static_site', 'sitemap.xml'), 'w'){|f| f.write(builder.to_xml)}
@@ -61,14 +66,19 @@ end
 # `cp ./favicon.ico ./static_site/favicon.ico`
 
 # File.open(File.join('./static_site', '.gitignore'), 'w'){|f| f.write(".DS_Store\n")}
-
-# generate_sitemap_xml
+generate_sitemap_xml
 save_page('404.html')
 
 save_page('/')
 save_page('/ru')
 save_page('/en')
 save_page('/be')
+
+save_page('/privacy_policy.html')
+save_page('/uk/privacy_policy.html')
+save_page('/ru/privacy_policy.html')
+save_page('/en/privacy_policy.html')
+save_page('/be/privacy_policy.html')
 
 Entry.where(level: 1).each do |entry|
   save_page("/uk-#{entry.category}")
