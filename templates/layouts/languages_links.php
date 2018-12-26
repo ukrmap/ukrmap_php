@@ -1,12 +1,4 @@
 <ul class="nav navbar-nav navbar-right">
-<?php if (isset($conn) && !$conn->connect_errno || $_SERVER['SCRIPT_NAME'] == '/404.php') { ?>
-  <form class="navbar-form navbar-left" action="/<?php echo $locale; ?>/" method="GET" role="search" class="search_form" style="margin-top:6px;margin-bottom:4px;">
-    <div class="form-group">
-      <input type="text" name="q" id="search_query" value="<?php echo (isset($_GET['q']) ? escapehtmlchars($_GET['q']) : ''); ?>" class="form-control input-sm" size="30"/>
-    </div>
-    <input type="submit" class="btn btn-default btn-sm" value="<?php echo SEARCH; ?>"/>
-  </form>
-<?php } ?>
 <?php if (isset($entry)) { ?>
   <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">

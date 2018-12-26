@@ -6,8 +6,6 @@
     <script src="/js/photoswipe.min.js"></script>
     <script src="/js/photoswipe-ui-default.min.js"></script>
     <script src="/js/gallery.js"></script>
-    <script src="/js/jquery.autocomplete.min.js"></script>
-    <script src="/js/search_autocomplete.js"></script>
     <script type="text/javascript">
       if (window.location.host === 'geomap.com.ua' && window.location.protocol !== 'https:') {
         window.location.protocol = 'https:'

@@ -10,7 +10,7 @@
       <ul class="nav navbar-nav">
         <?php require('navigation_links.php'); ?>
       </ul>
-      <?php require('languages_links.php'); ?>
+      <?php if ($_SERVER['SCRIPT_NAME'] != '/404.php') { require('languages_links.php'); } ?>
     </div>
   </div>
 </div>

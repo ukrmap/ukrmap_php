@@ -25,7 +25,7 @@ if ($id > 0) {
     $category = $entry['category'];
   }
 }
-require('source/redirect.php');
+// require('source/redirect.php');
 require('templates/layouts/header.php');
 require('templates/layouts/navigation.php');
 if ($entry && $parent) {

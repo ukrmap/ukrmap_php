@@ -16,7 +16,7 @@ if (preg_match('/^\/program2010\/(\w+)\/(.+)/', $_SERVER['REQUEST_URI'], $matche
   }
 }
 
-header('HTTP/1.0 404 Not Found');
+// header('HTTP/1.0 404 Not Found');
 
 $uri = isset($_GET['uri']) ? $_GET['uri'] : $_SERVER['REQUEST_URI'];
 

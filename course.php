@@ -20,7 +20,7 @@ if (!$conn->connect_errno) {
 $page_title = $entry[$title];
 $category = $entry['category'];
 
-require('source/redirect.php');
+// require('source/redirect.php');
 require('templates/layouts/header.php');
 require('templates/layouts/navigation.php');
 require('templates/layouts/container.php');
