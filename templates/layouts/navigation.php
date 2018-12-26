@@ -5,7 +5,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <span class="navbar-brand hidden-xs"><a href="/">UKRMAP</a></span>
+    <span class="navbar-brand hidden-xs"><a href="/">geomap.com.ua</a></span>
     <div class="navbar-collapse collapse navbar-responsive-collapse">
       <ul class="nav navbar-nav">
         <?php require('navigation_links.php'); ?>

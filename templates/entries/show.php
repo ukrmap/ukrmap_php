@@ -43,42 +43,44 @@ foreach ($maps as $index => $map) {
 </script>
 </div>
 <?php
-$pictures = explode(';', $entry['pictures']);
-$index = 0;
-foreach ($pictures as $pictures_dir) {
-  $t = 'content/pictures/'.$files_dir.'/'.$pictures_dir.'_'.$locale.'.xml';
-  if (file_exists($t)) {
-    $f = $t;
-  } else {
-    $f = "content/pictures/$files_dir/$pictures_dir.xml";
-  }
-  $xml = file_get_contents($f);
-  $list = simplexml_load_string($xml);
-  if (isset($list['Title'])) { echo '<p style="margin-top:-5px;">'.$list['Title'].'</p>'; }
-  foreach ($list as $item) {
-    $fname = $item['FileName'];
-    $thumbnail = 'images/'.$files_dir.'/'.$pictures_dir.'/'.$fname.'_resize.jpg';
-    $picture = "images/$files_dir/$pictures_dir/$fname.jpg";
-    if (!file_exists($picture)) {
-      continue;
+if ($entry['pictures']) {
+  $pictures = explode(';', $entry['pictures']);
+  $index = 0;
+  foreach ($pictures as $pictures_dir) {
+    $t = 'content/pictures/'.$files_dir.'/'.$pictures_dir.'_'.$locale.'.xml';
+    if (file_exists($t)) {
+      $f = $t;
+    } else {
+      $f = "content/pictures/$files_dir/$pictures_dir.xml";
     }
-    if (!file_exists($thumbnail)) {
-      $thumbnail = $picture;
+    $xml = file_get_contents($f);
+    $list = simplexml_load_string($xml);
+    if (isset($list['Title'])) { echo '<p style="margin-top:-5px;">'.$list['Title'].'</p>'; }
+    foreach ($list as $item) {
+      $fname = $item['FileName'];
+      $thumbnail = 'images/'.$files_dir.'/'.$pictures_dir.'/'.$fname.'_resize.jpg';
+      $picture = "images/$files_dir/$pictures_dir/$fname.jpg";
+      if (!file_exists($picture)) {
+        continue;
+      }
+      if (!file_exists($thumbnail)) {
+        $thumbnail = $picture;
+      }
+      $size = getimagesize($picture);
+      $name = $item['Caption'];
+      echo '<div class="picture_preview">';
+      echo '<a href="/'.$picture.'" class="picture_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.escapehtmlchars($name).'" data-index="'.$index.'">';
+      echo '<img src="/'.$thumbnail.'" width="200"/>';
+      echo '</a>';
+      echo '<br/>';
+      echo "<span><i>$name</i></span>";
+      echo '</div>';
+      $index++;
     }
-    $size = getimagesize($picture);
-    $name = $item['Caption'];
-    echo '<div class="picture_preview">';
-    echo '<a href="/'.$picture.'" class="picture_link" data-w="'.$size[0].'" data-h="'.$size[1].'" data-title="'.escapehtmlchars($name).'" data-index="'.$index.'">';
-    echo '<img src="/'.$thumbnail.'" width="200"/>';
-    echo '</a>';
-    echo '<br/>';
-    echo "<span><i>$name</i></span>";
-    echo '</div>';
-    $index++;
   }
 }
 ?>
   </div>
 </div>
 
-<?php require('templates/entries/pswp.php'); ?>
+<?php if ($entry['pictures']) { require('templates/entries/pswp.php'); } ?>

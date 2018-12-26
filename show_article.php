@@ -8,7 +8,7 @@ if ($id > 0) {
 
 if ($article && $_SERVER['REQUEST_URI'] != article_path($article)) {
   header('HTTP/1.1 301 Moved Permanently');
-  header('Location: http://ukrmap.su'.article_path($article));
+  header('Location: https://geomap.com.ua'.article_path($article));
   exit(0);
 }
 

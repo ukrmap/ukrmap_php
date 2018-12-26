@@ -31,5 +31,5 @@ require('templates/layouts/header.php');
 require('templates/layouts/navigation.php');
 require('templates/layouts/container.php');
 require('templates/entries/category.php');
-require('templates/layouts/footer.php');
+require('templates/layouts/footer_light.php');
 ?>

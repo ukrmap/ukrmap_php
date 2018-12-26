@@ -8,8 +8,8 @@ function t($key) {
 
 function entry_path($entry, $locele) {
   switch ($entry['level']) {
-    case 1: return '/'.$locele.'-'.$entry['category'];
-    case 2: return '/'.$locele.'-'.$entry['course'];
+    case 1: return '/'.$locele.'-'.$entry['category'].'/';
+    case 2: return '/'.$locele.'-'.$entry['course'].'/';
     case 3: return '/'.$locele.'-'.$entry['course'].'/'.$entry['id'].'.html';
   }
 }

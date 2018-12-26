@@ -5,11 +5,11 @@
 <?php
 if (!$conn->connect_errno) {
   while ($entry = $entries->fetch_assoc()) {
-    echo '<tr><td><a href="/'.$locale.'-'.$entry['course'].'">'.$entry[$title].'</a></td></tr>';
+    echo '<tr><td><a href="/'.$locale.'-'.$entry['course'].'/">'.$entry[$title].'</a></td></tr>';
   }
 } else {
   foreach ($entries as $entry) {
-    echo '<tr><td><a href="/'.$locale.'-'.$entry['course'].'">'.$entry[$title].'</a></td></tr>';
+    echo '<tr><td><a href="/'.$locale.'-'.$entry['course'].'/">'.$entry[$title].'</a></td></tr>';
   }
 }
 ?>

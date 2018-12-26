@@ -4,7 +4,7 @@
   </div>
   <div class="col-md-8">
     <h1>404 помилка</h1>
-    <h4>Сторінка <?php echo 'http://ukrmap.su'.$uri; ?> не знайдена.</h4>
+    <h4>Сторінка <?php echo 'https://geomap.com.ua'.$uri; ?> не знайдена.</h4>
     <br/>
     <p style="font-size: 16px;">На жаль, запитувана Вами сторінка на сайті не існує.</p>
     <p style="font-size: 16px;">Перепрошуємо за незручності і пропонуємо наступні шляхи:</p>
@@ -12,7 +12,7 @@
       <li class="list-group-item" style="font-size: 16px;">повернутися назад за допомогою кнопки браузера "backspace";</li>
       <li class="list-group-item" style="font-size: 16px;">перевірити правильність написання URL адреси сторінки;</li>
       <li class="list-group-item" style="font-size: 16px;">скористатися меню сайту для пошуку необхідної сторінки;</li>
-      <li class="list-group-item" style="font-size: 16px;">скористатися пошуком на сайті ukrmap.su;</li>
+      <li class="list-group-item" style="font-size: 16px;">скористатися пошуком на сайті geomap.com.ua;</li>
       <li class="list-group-item" style="font-size: 16px;">скористатися звичною для Вас пошуковою системою.</li>
     </ul>
   </div>

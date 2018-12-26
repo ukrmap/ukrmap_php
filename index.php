@@ -8,5 +8,5 @@ if (isset($_GET['q'])) {
 } else {
   require('templates/home/index.php');
 }
-require('templates/layouts/footer.php');
+require('templates/layouts/footer_light.php');
 ?>

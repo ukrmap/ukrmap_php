@@ -25,5 +25,5 @@ require('templates/layouts/header.php');
 require('templates/layouts/navigation.php');
 require('templates/layouts/container.php');
 require('templates/entries/course.php');
-require('templates/layouts/footer.php');
+require('templates/layouts/footer_light.php');
 ?>
